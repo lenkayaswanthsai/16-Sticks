@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>The 16 Sticks</title>
+</head>
+<body>
+    <div class="game-container">
+        <h1>The 16 Sticks</h1>
+        <p id="instructions">Each player can pick 1, 2, or 3 sticks in their turn. The player who picks the last stick loses.</p>
+        <p id="turn-text">Player 1's turn</p>
+        <div id="sticks-container">
+            <!-- Sticks will be added dynamically using JavaScript -->
+        </div>
+        <div id="buttons-container">
+            <button onclick="pickSticks(1)">1 Stick</button>
+            <button onclick="pickSticks(2)">2 Sticks</button>
+            <button onclick="pickSticks(3)">3 Sticks</button>
+        </div>
+        <div id="winner-text" class="hidden">
+            <p id="winner-name"></p>
+            <p id="winner-message"></p>
+        </div>
+        <button id="restart-btn" onclick="restartGame()">Restart</button>
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>
