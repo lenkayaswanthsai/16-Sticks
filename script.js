@@ -37,7 +37,8 @@ function pickSticks(num) {
         winnerText.classList.remove('hidden');
 
         const winnerName = document.getElementById('winner-name');
-        winnerName.textContent = Player ${(currentPlayer+1)%2};
+        winnerName.textContent = `Player ${currentPlayer}`;
+
         const winnerMessage = document.getElementById('winner-message');
         winnerMessage.textContent = 'Wins!';
 
